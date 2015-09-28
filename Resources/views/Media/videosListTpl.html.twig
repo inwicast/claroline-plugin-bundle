@@ -1,6 +1,6 @@
 <div class="row container">
     {# Search bar #}
-    <div class="col-md-8 col-xs-6">
+    <div class="col-xs-6">
         <div class="input-group">
             <input type="search" id="search-inwicast" class="form-control"
                    placeholder="{{ 'search' | trans({}, 'platform') }}&hellip;">
@@ -12,7 +12,7 @@
         </div>
     </div>
     {# Display tools #}
-    <div class="col-md-4 col-xs-6">
+    <div class="col-xs-6">
         {{ 'display' | trans({}, 'widget') }}:
         <div class="btn-group">
             <button id="setGrid" class="btn btn-default btn-primary active" type="button" onClick="setDisplay('grid')"><span
@@ -36,7 +36,7 @@
             - Default: 4 items a line
             - If less than 4 items: make them take 1 complete line (12 columns / nb of items)
         #}
-        <div class="col-sm-3 col-xs-6 auto-new-line">
+        <div class="col-xs-6 auto-new-line">
             <div id="thumb-{{ media.mediaRef }}"class="thumbnail"
                  onclick="select('{{ media.title | convert_encoding('UTF-8', 'ISO-8859-1') }}', '{{ loop.index0 }}', '{{ media.mediaRef }}')">
                 <label for="{{ media.mediaRef }}" class="thumbnail-radio">
